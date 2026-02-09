@@ -8,21 +8,18 @@ export const Hero: React.FC = () => {
     <section className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 overflow-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-900 via-black to-black border-b border-neutral-900">
       <div className="max-w-7xl mx-auto px-4 w-full relative z-10">
 
-        {/* Date Grid - Mobile 2x2, Desktop 4x1 */}
-        <ScrollReveal animation="fade-in" delay={200} className="mb-12">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 opacity-90">
-            {[
-              { icon: Calendar, label: "DATAS", value: "27, 28 FEV + 01 MAR" },
-              { icon: Clock, label: "HORÁRIO", value: "18:00 ÀS 20:00" },
-              { icon: Monitor, label: "FORMATO", value: "100% ONLINE" },
-              { icon: Ticket, label: "LOTE 1", value: "R$ 27,99" }
-            ].map((item, i) => (
-              <div key={i} className="border border-neutral-800 bg-neutral-900/50 p-3 flex flex-col items-center justify-center text-center rounded-lg backdrop-blur-sm">
-                <item.icon className="text-[#FF6B35] w-5 h-5 mb-2" />
-                <span className="text-[#FF6B35] font-bold text-xs md:text-sm tracking-wider mb-1">{item.label}</span>
-                <span className="text-white text-xs md:text-sm font-medium">{item.value}</span>
-              </div>
-            ))}
+        {/* Date & Time - Minimal */}
+        <ScrollReveal animation="fade-in" delay={200} className="mb-8">
+          <div className="flex items-center justify-center gap-6 text-gray-400 text-sm md:text-base">
+            <div className="flex items-center gap-2">
+              <Calendar className="text-[#FF6B35] w-4 h-4" />
+              <span>27, 28 FEV + 01 MAR</span>
+            </div>
+            <span className="text-neutral-700">|</span>
+            <div className="flex items-center gap-2">
+              <Clock className="text-[#FF6B35] w-4 h-4" />
+              <span>18:00 às 20:00</span>
+            </div>
           </div>
         </ScrollReveal>
 
