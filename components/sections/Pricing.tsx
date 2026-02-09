@@ -66,7 +66,7 @@ export const Pricing: React.FC = () => {
               </div>
               <ul className="space-y-3 mb-8 flex-grow">
                 <li className="flex items-start text-sm text-[#FF6B35] font-semibold"><Check className="mr-2 h-5 w-5" />Tudo do geral</li>
-                {['👑 Mestre das Vendas (R$ 97)', '👑 Mestre do N8N (R$ 97)', '👑 Suporte prioritário', '👑 Q&A extras', '👑 2x chances em sorteios'].map((t, i) => (
+                {['👑 Mestre das Vendas (R$ 97)', '👑 Mestre do N8N (R$ 97)', '👑 Suporte prioritário', '👑 Acesso ao bootcamp gravado'].map((t, i) => (
                   <li key={i} className="flex items-start text-sm text-white font-medium">{t}</li>
                 ))}
               </ul>
