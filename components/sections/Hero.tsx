@@ -1,13 +1,28 @@
 import React from 'react';
-import { Calendar, Clock, Monitor, Ticket } from 'lucide-react';
+import { Calendar, Clock } from 'lucide-react';
 import { ShinyButton } from '../ui/ShinyButton';
 import { ScrollReveal } from '../ui/ScrollReveal';
 
 export const Hero: React.FC = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 overflow-hidden bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-neutral-900 via-black to-black border-b border-neutral-900">
-      <div className="max-w-7xl mx-auto px-4 w-full relative z-10">
+    <section className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 overflow-hidden border-b border-neutral-900 bg-black">
+      {/* Background Banners */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/banner desktop.png"
+          alt=""
+          className="hidden md:block w-full h-full object-cover opacity-60"
+        />
+        <img
+          src="/banner mobile.png"
+          alt=""
+          className="block md:hidden w-full h-full object-cover opacity-70"
+        />
+        {/* Dark Overlay - Higher opacity for better text contrast while letting images show through more */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black"></div>
+      </div>
 
+      <div className="max-w-7xl mx-auto px-4 w-full relative z-10">
         {/* Date & Time - Minimal */}
         <ScrollReveal animation="fade-in" delay={200} className="mb-8">
           <div className="flex items-center justify-center gap-6 text-gray-400 text-sm md:text-base">

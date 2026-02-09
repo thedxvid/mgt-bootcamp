@@ -5,6 +5,7 @@ import { PainSolution } from './components/sections/PainSolution';
 import { Curriculum } from './components/sections/Curriculum';
 import { Proof } from './components/sections/Proof';
 import { Pricing } from './components/sections/Pricing';
+import { Mentor } from './components/sections/Mentor';
 import { Footer } from './components/sections/Footer';
 import { StickyCTA } from './components/StickyCTA';
 
@@ -18,6 +19,7 @@ function App() {
         <PainSolution />
         <Curriculum />
         <Pricing />
+        <Mentor />
         <Footer />
       </main>
       <StickyCTA />

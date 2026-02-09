@@ -22,11 +22,12 @@ export const StickyHeader: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
         {/* Logo */}
-        <div className="flex items-center gap-2">
-          <img src="/logomgt.png" alt="MGT" className="h-8 w-8 object-contain" />
-          <span className="text-lg md:text-xl font-semibold tracking-tight text-white select-none">
-            MGT <span className="text-[#FF6B35]">BOOTCAMP</span>
-          </span>
+        <div className="flex items-center">
+          <img
+            src="/logo_bootcamp.png"
+            alt="MGT Scaling Bootcamp"
+            className="h-10 md:h-12 w-auto object-contain"
+          />
         </div>
 
         {/* Urgency Center */}
