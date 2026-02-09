@@ -99,27 +99,58 @@ export const Pricing: React.FC = () => {
           </ScrollReveal>
         </div>
 
-        {/* POR QUE O PREÇO? */}
+        {/* POR QUE O PREÇO? - Refined Structure with Photo */}
         <ScrollReveal animation="fade-up" delay={400}>
-          <div className="mt-20 max-w-3xl mx-auto bg-neutral-900 border border-neutral-800 rounded-xl p-8 md:p-12">
-            <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 text-center">Por Que Este Preço?</h3>
-            <p className="text-gray-300 text-lg mb-4"><strong className="text-white">Não estou tentando ganhar dinheiro com este bootcamp.</strong></p>
-            <p className="text-gray-300 mb-6">Estou tentando encontrar pessoas sérias sobre construir renda recorrente vendendo IA.</p>
-            <div className="pl-4 border-l-2 border-[#FF6B35] mb-6 space-y-2 text-gray-300">
-              <p>Algumas se juntarão à <strong className="text-white">MGT Academy</strong>.</p>
-              <p>Algumas se tornarão <strong className="text-white">parceiros</strong>.</p>
-              <p>Algumas se tornarão <strong className="text-white">cases de sucesso</strong>.</p>
-            </div>
-            <div className="bg-black/50 rounded-lg p-6 mb-6">
-              <p className="text-white font-semibold mb-3">O R$ 27,99 serve para:</p>
-              <ul className="space-y-2 text-gray-300">
-                <li className="flex items-start"><Check className="text-[#FF6B35] mr-2 h-5 w-5" />Cobrir custos operacionais</li>
-                <li className="flex items-start"><Check className="text-[#FF6B35] mr-2 h-5 w-5" />Filtrar quem não é sério</li>
-              </ul>
-            </div>
-            <div className="text-center">
-              <p className="text-[#FF6B35] font-bold text-lg mb-2">Este é o melhor negócio que vou oferecer.</p>
-              <p className="text-gray-400 text-sm">Se você está lendo isso agora, pegue o lote mais barato disponível.</p>
+          <div className="mt-20 max-w-5xl mx-auto bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden shadow-2xl">
+            <div className="grid grid-cols-1 md:grid-cols-2">
+              {/* Text Side */}
+              <div className="p-8 md:p-12 space-y-5">
+                <h3 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight italic">
+                  "Por Que Apenas R$ {currentLot.price}?"
+                </h3>
+
+                <p className="text-gray-400 font-medium italic">Pergunta justa.</p>
+
+                <div className="space-y-4 text-gray-300 text-sm md:text-base leading-relaxed">
+                  <p>
+                    Já vi pessoas cobrarem R$ 997 por menos do que estou te entregando aqui. E eu provavelmente poderia cobrar R$ 297+ e ainda lotar este evento.
+                  </p>
+
+                  <p className="font-bold text-white uppercase tracking-wider text-xs">Mas aqui está minha lógica:</p>
+
+                  <p>
+                    Não estou tentando ganhar dinheiro com este bootcamp. Estou tentando encontrar pessoas que levam a sério a construção de renda com IA e ajudá-las a ter seu primeiro resultado.
+                  </p>
+
+                  <p>
+                    Algumas dessas pessoas se juntarão aos meus programas avançados. Algumas se tornarão clientes. Algumas se tornarão parceiras. E outras apenas terão sucesso sozinhas e falarão bem de mim para os amigos.
+                  </p>
+
+                  <p className="font-semibold text-white">Todos esses resultados são vitórias para mim.</p>
+
+                  <p className="text-xs md:text-sm text-gray-400">
+                    O valor de R$ {currentLot.price} apenas cobre meus custos de anúncio e filtra as pessoas que não estão realmente comprometidas. É só isso.
+                  </p>
+
+                  <p className="text-[#FF6B35] font-bold italic">
+                    Este é o melhor negócio que já ofereci. E provavelmente nunca mais rodarei a este preço.
+                  </p>
+
+                  <p className="text-xs text-gray-500 border-t border-neutral-800 pt-4 font-medium italic">
+                    Assim que eu tiver cases de sucesso suficientes desta turma, o preço subirá permanentemente.
+                  </p>
+                </div>
+              </div>
+
+              {/* Photo Side */}
+              <div className="relative h-64 md:h-auto overflow-hidden">
+                <img
+                  src="/IMG_4082.JPG"
+                  alt="Marcelo Anders"
+                  className="w-full h-full object-cover grayscale-[20%] sepia-[10%] contrast-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-neutral-900 via-transparent to-transparent"></div>
+              </div>
             </div>
           </div>
         </ScrollReveal>
