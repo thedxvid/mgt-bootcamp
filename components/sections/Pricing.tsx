@@ -2,6 +2,7 @@ import React from 'react';
 import { Check, X, Crown, Zap } from 'lucide-react';
 import { ShinyButton } from '../ui/ShinyButton';
 import { ScrollReveal } from '../ui/ScrollReveal';
+import { OptimizedImage } from '../ui/OptimizedImage';
 
 export const Pricing: React.FC = () => {
   const getCurrentLot = () => {
@@ -144,10 +145,11 @@ export const Pricing: React.FC = () => {
 
               {/* Photo Side */}
               <div className="relative h-64 md:h-auto overflow-hidden">
-                <img
+                <OptimizedImage
                   src="/IMG_4082.JPG"
                   alt="Marcelo Anders"
-                  className="w-full h-full object-cover grayscale-[20%] sepia-[10%] contrast-110"
+                  className="w-full h-full grayscale-[20%] sepia-[10%] contrast-110"
+                  objectFit="cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-neutral-900 via-transparent to-transparent"></div>
               </div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Countdown } from './ui/Countdown';
+import { OptimizedImage } from './ui/OptimizedImage';
 
 export const StickyHeader: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -22,11 +23,13 @@ export const StickyHeader: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
 
         {/* Logo */}
-        <div className="flex items-center">
-          <img
+        <div className="flex items-center h-10 md:h-12">
+          <OptimizedImage
             src="/logo_bootcamp.png"
             alt="MGT Scaling Bootcamp"
-            className="h-10 md:h-12 w-auto object-contain"
+            className="h-full w-auto"
+            objectFit="contain"
+            priority={true}
           />
         </div>
 

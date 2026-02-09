@@ -1,5 +1,6 @@
 import React from 'react';
 import { ScrollReveal } from '../ui/ScrollReveal';
+import { OptimizedImage } from '../ui/OptimizedImage';
 
 export const Mentor: React.FC = () => {
     return (
@@ -41,10 +42,11 @@ export const Mentor: React.FC = () => {
                         <div className="relative group">
                             <div className="absolute -inset-1 bg-gradient-to-r from-[#FF6B35] to-orange-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
                             <div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-white/10 bg-neutral-900">
-                                <img
+                                <OptimizedImage
                                     src="/foto_marcelo.JPG"
                                     alt="Marcelo Anders"
-                                    className="w-full h-full object-cover object-center transform transition duration-700 group-hover:scale-105"
+                                    className="w-full h-full transform transition duration-700 group-hover:scale-105"
+                                    objectFit="cover"
                                 />
                             </div>
                         </div>
