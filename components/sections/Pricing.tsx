@@ -118,10 +118,6 @@ export const Pricing: React.FC = () => {
                   </li>
                   <li className="flex items-start text-xs text-white font-medium">
                     <Crown className="text-[#FF6B35] mr-2 h-4 w-4 flex-shrink-0 mt-0.5" />
-                    <span><strong>2x chances</strong> de ganhar consultoria adicional</span>
-                  </li>
-                  <li className="flex items-start text-xs text-white font-medium">
-                    <Crown className="text-[#FF6B35] mr-2 h-4 w-4 flex-shrink-0 mt-0.5" />
                     <span><strong>Suporte prioritário</strong> durante as calls</span>
                   </li>
                   <li className="flex items-start text-xs text-white font-medium">
@@ -159,8 +155,8 @@ export const Pricing: React.FC = () => {
                 <div className="flex items-baseline gap-2">
                   <span className="text-3xl md:text-4xl font-bold text-yellow-500">R$ 249,99</span>
                 </div>
-                <p className="text-xs text-gray-400 mt-1 line-through">Valor total: R$ 497</p>
-                <p className="text-sm text-yellow-500 font-bold">Economia de R$ 247</p>
+                <p className="text-xs text-gray-400 mt-1 line-through">Valor total: R$ 496</p>
+                <p className="text-sm text-yellow-500 font-bold">Economia de R$ 246</p>
               </div>
 
               <div className="space-y-4 mb-6 flex-grow">
@@ -171,7 +167,7 @@ export const Pricing: React.FC = () => {
                 {/* Mestre das Vendas */}
                 <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-3 space-y-2">
                   <p className="text-sm font-bold text-yellow-500 flex items-center gap-1">
-                    <Gift className="h-4 w-4" /> MESTRE DAS VENDAS (R$ 97,99)
+                    <Gift className="h-4 w-4" /> MESTRE DAS VENDAS (R$ 199)
                   </p>
                   <ul className="space-y-1.5">
                     {[
@@ -190,7 +186,7 @@ export const Pricing: React.FC = () => {
                 {/* Mestre do N8N */}
                 <div className="bg-yellow-500/10 border border-yellow-500/30 rounded-lg p-3 space-y-2">
                   <p className="text-sm font-bold text-yellow-500 flex items-center gap-1">
-                    <Gift className="h-4 w-4" /> MESTRE DO N8N (R$ 97,99)
+                    <Gift className="h-4 w-4" /> MESTRE DO N8N (R$ 199)
                   </p>
                   <ul className="space-y-1.5">
                     {[
@@ -243,7 +239,6 @@ export const Pricing: React.FC = () => {
                     { item: 'Canal Discord VIP', normal: false, vip: true, full: true, highlight: 'vip' },
                     { item: 'Gravações PRÓXIMOS bootcamps', normal: false, vip: true, full: true, highlight: 'vip' },
                     { item: 'Hotseat exclusivo Cello', normal: false, vip: true, full: true, highlight: 'vip' },
-                    { item: '2x chances consultoria adicional', normal: false, vip: true, full: true, highlight: 'vip' },
                     { item: 'Suporte prioritário calls', normal: false, vip: true, full: true, highlight: 'vip' },
                     { item: 'Material complementar', normal: false, vip: true, full: true, highlight: 'vip' },
                     { item: 'Mestre das Vendas', normal: false, vip: false, full: true, highlight: 'full' },
