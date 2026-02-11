@@ -6,40 +6,30 @@ import { ScrollReveal } from '../ui/ScrollReveal';
 export const Curriculum: React.FC = () => {
   const days = [
     {
-      day: "DIA 1",
-      title: "FUNDAÇÃO — Posicionamento e Estratégia",
+      day: "PARTE 1",
+      title: "FUNDAÇÃO E ATRAÇÃO — Posicionamento e Prospecção",
       icon: Target,
       color: "from-orange-500 to-red-500",
       bullets: [
-        "Por que generalistas ficam presos nos R$ 5k enquanto nichados faturam R$ 30k+ — e o framework exato para escolher seu nicho lucrativo em menos de 30 minutos (mesmo que ache que \"nichos limitam oportunidades\").",
-        "Como precificar implementação de IA sem perder o cliente nem deixar dinheiro na mesa — a fórmula que usei para cobrar de R$ 3k a R$ 30k pelo mesmo tipo de solução (a diferença está em COMO você posiciona, não no que entrega).",
-        "Sistema de prospecção diária que gera leads todos os dias — onde encontrar prospects qualificados e o método exato para nunca mais ficar \"sem saber onde buscar clientes\"."
+        "Por que generalistas ficam presos nos R$ 5k enquanto nichados faturam R$ 30k+ — e o framework exato para escolher seu nicho lucrativo.",
+        "Como precificar implementação de IA sem perder o cliente nem deixar dinheiro na mesa — a fórmula para cobrar de R$ 3k a R$ 30k (a diferença está no posicionamento).",
+        "Scripts de prospecção palavra por palavra (DM, e-mail e WhatsApp) e a metodologia completa de prospecção ativa passo a passo.",
+        "Sistema de prospecção diária que gera leads todos os dias e como encontrar prospects qualificados sem nunca mais ficar sem saber onde buscar."
       ],
-      highlight: "🎯 A decisão mais importante do bootcamp: Você vai ESCOLHER seu nicho antes do Dia 2 começar. Sem isso, o resto não funciona."
+      highlight: "🎯 Ação imediata: Você vai ESCOLHER seu nicho e iniciar sua estratégia de prospecção. O foco aqui é gerar movimento real no seu funil."
     },
     {
-      day: "DIA 2",
-      title: "ATRAÇÃO — Prospecção Que Funciona",
-      icon: Users,
+      day: "PARTE 2",
+      title: "FECHAMENTO E ESCALA — Venda, Recorrência e Autoridade",
+      icon: Rocket,
       color: "from-blue-500 to-purple-500",
       bullets: [
-        "Scripts de prospecção palavra por palavra — DM, e-mail e WhatsApp. Copie, cole, adapte. Testados em centenas de abordagens que geraram respostas reais (e contratos fechados).",
-        "A metodologia completa de prospecção ativa passo a passo — desde encontrar o lead até agendar a call de vendas. O caminho exato que elimina \"não sei o que fazer agora\".",
-        "Como criar conteúdo intencional que vende enquanto você dorme — posts, stories e vídeos que atraem clientes pagantes (não seguidores aleatórios que só curtem e somem). Para quem quer construir autoridade enquanto prospecta."
+        "Deck de vendas + Script de fechamento que fecha contratos de R$ 3k-10k — o que falar quando o cliente traz objeções como \"está caro\" ou \"vou pensar\".",
+        "Como transformar projeto one-time em R$ 1-3k/mês recorrente — o segredo para sair do zero todo mês e construir previsibilidade real.",
+        "Como criar conteúdo intencional que vende enquanto você dorme (atraindo clientes pagantes) e as 3 formas de escalar além dos R$ 30k/mês.",
+        "Plano de ação imediato: Saia do bootcamp com seu deck de vendas pronto e script de fechamento personalizado para seu negócio."
       ],
-      highlight: "📞 Tarefa prática: Você vai PROSPECTAR durante o bootcamp (sim, ação real, não teoria). Quem aplicar pode ter a primeira conversa comercial ANTES do Dia 3."
-    },
-    {
-      day: "DIA 3",
-      title: "FECHAMENTO — Venda, Recorrência e Escala",
-      icon: Rocket,
-      color: "from-green-500 to-teal-500",
-      bullets: [
-        "Deck de vendas + Script de fechamento que fecha contratos de R$ 3k-10k — a apresentação exata que uso em calls e o que falar quando o cliente pergunta \"mas quanto custa?\", \"preciso pensar\" ou \"não sei se IA funciona no meu caso\".",
-        "Como transformar projeto one-time em R$ 1-3k/mês recorrente — o segredo para sair do \"sempre recomeçando do zero\" e construir previsibilidade. A diferença entre faturar R$ 10k uma vez e R$ 10k TODO MÊS.",
-        "As 3 formas de escalar além de R$ 30k/mês — Infosaas, Apps e o modelo que usei para passar de serviço para produto."
-      ],
-      highlight: "💰 Implementação imediata: Saia do bootcamp com seu deck de vendas pronto e script de fechamento personalizado."
+      highlight: "💰 Implementação: Saia com as ferramentas exatas para fechar contratos de alto valor e escalar sua operação com previsibilidade."
     }
   ];
 
@@ -53,8 +43,8 @@ export const Curriculum: React.FC = () => {
               <div className="bg-black/50 p-6 md:p-8 border border-neutral-800 rounded-xl hover:border-[#FF6B35] transition-colors h-full">
                 <Calendar className="text-[#FF6B35] w-8 h-8 md:w-10 md:h-10 mb-4" />
                 <h3 className="text-lg md:text-xl font-bold mb-2">QUANDO</h3>
-                <p className="text-gray-400">27, 28 FEV + 01 MAR</p>
-                <p className="text-sm text-gray-500 mt-2">3 dias intensivos de imersão</p>
+                <p className="text-gray-400">27 e 28 FEV</p>
+                <p className="text-sm text-gray-500 mt-2">2 dias intensivos de imersão</p>
               </div>
             </ScrollReveal>
 
@@ -83,8 +73,8 @@ export const Curriculum: React.FC = () => {
       <div className="py-24 max-w-7xl mx-auto px-4">
         <ScrollReveal animation="fade-up">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold mb-4">O Que Você Vai Dominar <span className="text-[#FF6B35]">em 3 Dias</span></h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">Cada dia foi desenhado para te levar do conhecimento à ação. Você sai com habilidades práticas, não só teoria.</p>
+            <h2 className="text-3xl md:text-5xl font-bold mb-4">O Que Você Vai Dominar <span className="text-[#FF6B35]">em 2 Dias</span></h2>
+            <p className="text-gray-400 max-w-2xl mx-auto">Cada momento foi desenhado para te levar do conhecimento à ação. Você sai com habilidades práticas, não só teoria.</p>
           </div>
         </ScrollReveal>
 

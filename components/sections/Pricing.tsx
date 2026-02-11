@@ -42,7 +42,7 @@ export const Pricing: React.FC = () => {
                 <p className="text-xs text-gray-400 font-semibold uppercase tracking-wider">O que está incluso:</p>
                 <ul className="space-y-2.5">
                   {[
-                    'Acesso completo ao bootcamp de 3 dias',
+                    'Acesso completo ao bootcamp de 2 dias',
                     'Framework completo de vendas de IA',
                     'Treinamento sobre posicionamento, prospecção e fechamento',
                     'Acesso a todas as sessões ao vivo',
@@ -230,7 +230,7 @@ export const Pricing: React.FC = () => {
                 </thead>
                 <tbody className="divide-y divide-neutral-800">
                   {[
-                    { item: 'Bootcamp 3 dias', normal: true, vip: true, full: true },
+                    { item: 'Bootcamp 2 dias', normal: true, vip: true, full: true },
                     { item: 'Hotseat pós-call Marcelo', normal: true, vip: true, full: true },
                     { item: 'Gravações DESTE bootcamp', normal: true, vip: true, full: true },
                     { item: 'Scripts e templates', normal: true, vip: true, full: true },

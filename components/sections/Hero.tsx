@@ -37,7 +37,7 @@ export const Hero: React.FC = () => {
           <div className="flex items-center justify-center gap-6 text-gray-400 text-sm md:text-base">
             <div className="flex items-center gap-2">
               <Calendar className="text-[#FF6B35] w-4 h-4" />
-              <span>27, 28 FEV + 01 MAR</span>
+              <span>27 e 28 FEV</span>
             </div>
             <span className="text-neutral-700">|</span>
             <div className="flex items-center gap-2">
@@ -57,7 +57,7 @@ export const Hero: React.FC = () => {
 
           <ScrollReveal animation="fade-up" delay={500}>
             <h1 className="text-[26px] md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.15] text-white px-2">
-              Este Bootcamp de 3 Dias Ensina o Framework Exato Que Usei Para Vender Mais de{' '}
+              Este Bootcamp de 2 Dias Ensina o Framework Exato Que Usei Para Vender Mais de{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF6B35] to-orange-500">R$ 1 Milhão em Implementação de IA</span>
             </h1>
             <p className="text-lg md:text-2xl text-gray-300 mt-4 px-2 font-medium">
