@@ -3,6 +3,7 @@ import { Check, X, Crown, Zap, Gift } from 'lucide-react';
 import { ShinyButton } from '../ui/ShinyButton';
 import { ScrollReveal } from '../ui/ScrollReveal';
 import { OptimizedImage } from '../ui/OptimizedImage';
+import { MetaEvents } from '../../utils/metaCAPI';
 
 export const Pricing: React.FC = () => {
   const getCurrentLot = () => {
@@ -76,7 +77,7 @@ export const Pricing: React.FC = () => {
                 </div>
               </div>
 
-              <a href="https://pay.cakto.com.br/nbrj42k_760150" target="_blank" rel="noopener noreferrer" className="w-full">
+              <a href="https://pay.cakto.com.br/nbrj42k_760150" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => MetaEvents.initiateCheckout('Ingresso Normal', parseFloat(currentLot.price.replace(',', '.')), 'ingresso-normal')}>
                 <ShinyButton variant="secondary" fullWidth className="text-sm md:text-base whitespace-nowrap">GARANTIR INGRESSO</ShinyButton>
               </a>
             </div>
@@ -138,7 +139,7 @@ export const Pricing: React.FC = () => {
                 </div>
               </div>
 
-              <a href="https://pay.cakto.com.br/kjfhqts_760155" target="_blank" rel="noopener noreferrer" className="w-full">
+              <a href="https://pay.cakto.com.br/kjfhqts_760155" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => MetaEvents.initiateCheckout('Plano X (VIP)', 97.99, 'plano-vip')}>
                 <ShinyButton fullWidth className="h-14 text-sm md:text-base whitespace-nowrap">GARANTIR VIP</ShinyButton>
               </a>
             </div>
@@ -206,7 +207,7 @@ export const Pricing: React.FC = () => {
                 </div>
               </div>
 
-              <a href="https://pay.cakto.com.br/j6cckd3_760169" target="_blank" rel="noopener noreferrer" className="w-full">
+              <a href="https://pay.cakto.com.br/j6cckd3_760169" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => MetaEvents.initiateCheckout('Full Pack', 249.99, 'full-pack')}>
                 <ShinyButton variant="secondary" fullWidth className="text-sm md:text-base whitespace-nowrap">GARANTIR FULL PACK</ShinyButton>
               </a>
             </div>
