@@ -98,8 +98,12 @@ export const Proof: React.FC = () => {
                 >
                   <div className="aspect-video bg-neutral-900 rounded-xl border border-neutral-800 overflow-hidden">
                     <img
-                      src={`https://img.youtube.com/vi/${video.videoId}/maxresdefault.jpg`}
+                      src={`https://img.youtube.com/vi/${video.videoId}/hqdefault.jpg`}
                       alt={`Depoimento de ${video.name}`}
+                      loading="lazy"
+                      decoding="async"
+                      width={480}
+                      height={360}
                       className="w-full h-full object-cover opacity-80 group-hover:opacity-100 group-hover:scale-105 transition-all duration-300"
                     />
                     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors" />

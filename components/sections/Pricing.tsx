@@ -23,9 +23,18 @@ export const Pricing: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-4">
         <ScrollReveal animation="fade-up">
-          <div className="text-center mb-16">
+          <div className="text-center mb-16 px-4">
             <h2 className="text-3xl md:text-6xl font-bold text-white mb-4">Escolha Seu Ingresso</h2>
-            <p className="text-[#FF6B35] text-base md:text-lg font-medium">🔥 Lote {currentLot.lot} - Válido até {currentLot.endDate}</p>
+            <div className="flex flex-col items-center gap-3">
+              <p className="text-[#FF6B35] text-base md:text-lg font-medium">🔥 Lote {currentLot.lot} - Válido até {currentLot.endDate}</p>
+              <div className="bg-[#FF6B35]/20 border border-[#FF6B35]/40 text-[#FF6B35] px-4 py-1.5 rounded-full text-sm md:text-base font-bold animate-pulse inline-flex items-center gap-2">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#FF6B35] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#FF6B35]"></span>
+                </span>
+                🚨 80% das vagas do 2º lote esgotadas!
+              </div>
+            </div>
           </div>
         </ScrollReveal>
 

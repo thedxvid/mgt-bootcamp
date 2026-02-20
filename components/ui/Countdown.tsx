@@ -8,7 +8,7 @@ export const Countdown: React.FC = () => {
     seconds: 0
   });
 
-  const targetDate = new Date('2026-02-16T00:00:00');
+  const targetDate = new Date('2026-02-23T23:59:59');
 
   useEffect(() => {
     const calculateTimeLeft = () => {

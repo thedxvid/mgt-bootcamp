@@ -2,32 +2,29 @@ import React from 'react';
 import { Calendar, Clock } from 'lucide-react';
 import { ShinyButton } from '../ui/ShinyButton';
 import { ScrollReveal } from '../ui/ScrollReveal';
-import { OptimizedImage } from '../ui/OptimizedImage';
 
 export const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex flex-col justify-center pt-24 pb-12 overflow-hidden border-b border-neutral-900 bg-black">
-      {/* Background Banners */}
+      {/* Background Banners - Only loads the correct one via <picture> */}
       <div className="absolute inset-0 z-0">
-        <div className="hidden md:block w-full h-full opacity-60">
-          <OptimizedImage
-            src="/banner desktop.png"
-            alt="Desktop Banner"
-            className="w-full h-full"
-            objectFit="cover"
-            priority={true}
+        <picture>
+          <source media="(max-width: 767px)" srcSet="/banner-mobile.webp" type="image/webp" />
+          <source media="(max-width: 767px)" srcSet="/banner mobile.png" type="image/png" />
+          <source media="(min-width: 768px)" srcSet="/banner-desktop.webp" type="image/webp" />
+          <source media="(min-width: 768px)" srcSet="/banner desktop.png" type="image/png" />
+          <img
+            src="/banner-mobile.webp"
+            alt="Bootcamp Banner"
+            className="w-full h-full object-cover"
+            style={{ opacity: 0.65 }}
+            fetchPriority="high"
+            decoding="async"
+            width={768}
+            height={1024}
           />
-        </div>
-        <div className="block md:hidden w-full h-full opacity-70">
-          <OptimizedImage
-            src="/banner mobile.png"
-            alt="Mobile Banner"
-            className="w-full h-full"
-            objectFit="cover"
-            priority={true}
-          />
-        </div>
-        {/* Dark Overlay - Higher opacity for better text contrast while letting images show through more */}
+        </picture>
+        {/* Dark Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black"></div>
       </div>
 
@@ -50,8 +47,19 @@ export const Hero: React.FC = () => {
         {/* Main Content */}
         <div className="text-center max-w-5xl mx-auto space-y-6 md:space-y-8">
           <ScrollReveal animation="fade-up" delay={400}>
-            <div className="inline-block bg-[#FF6B35]/10 border border-[#FF6B35]/30 rounded-full px-4 py-1.5 mb-2">
-              <span className="text-[#FF6B35] text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase">🔥 Lote 1 - Preço Especial de Lançamento</span>
+            <div className="flex flex-col items-center gap-4 mb-4">
+              <div className="bg-[#FF6B35] text-black px-6 py-2 rounded-xl border-b-4 border-orange-800 shadow-xl transform skew-x-[-12deg]">
+                <span className="text-lg md:text-2xl font-black italic tracking-tighter uppercase block leading-none">
+                  🚨 ÚLTIMAS VAGAS: 80% ESGOTADO!
+                </span>
+              </div>
+
+              <div className="w-full max-w-md bg-neutral-900 border border-neutral-800 rounded-full h-4 overflow-hidden p-0.5">
+                <div className="bg-gradient-to-r from-orange-600 to-[#FF6B35] h-full rounded-full relative animate-[progress_2s_ease-out_forwards]" style={{ width: '80%' }}>
+                  <div className="absolute inset-0 bg-[linear-gradient(45deg,rgba(255,255,255,0.2)_25%,transparent_25%,transparent_50%,rgba(255,255,255,0.2)_50%,rgba(255,255,255,0.2)_75%,transparent_75%,transparent)] bg-[length:20px_20px] animate-progress-shine"></div>
+                </div>
+              </div>
+              <p className="text-[#FF6B35] text-xs font-bold uppercase tracking-widest animate-pulse">Restam menos de 40 vagas no Lote 2</p>
             </div>
           </ScrollReveal>
 
@@ -77,13 +85,13 @@ export const Hero: React.FC = () => {
                 GARANTIR MINHA VAGA AGORA
               </ShinyButton>
             </div>
-            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-xs text-gray-500 pb-16 md:pb-20">
+            <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-xs text-gray-400 pb-16 md:pb-20">
               <span className="flex items-center gap-1">
                 <span className="text-gray-600 line-through">R$ 97,00</span>
-                <span className="text-[#FF6B35] font-bold text-sm">R$ 27,99</span>
+                <span className="text-[#FF6B35] font-bold text-sm">R$ 47,99</span>
               </span>
               <span className="hidden md:block">•</span>
-              <span>Lote 1 válido até 16/02</span>
+              <span className="font-medium text-[#FF6B35]">Lote 2 válido até 23/02 (80% Esgotado)</span>
             </div>
           </ScrollReveal>
         </div>
